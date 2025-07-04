@@ -42,7 +42,7 @@ body, html {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  animation: slideshow 15s infinite;
+  animation: slideshow 20s infinite;
 }
 
 .one {
@@ -57,12 +57,20 @@ body, html {
   background-image: url('assets/pic3.jpg');
   animation-delay: 10s;
 }
+.four {
+  background-image: url('assets/pic4.jpg');
+  animation-delay: 15s;
+}
+.five {
+  background-image: url('assets/pic5.jpg');
+  animation-delay: 20s;
+}
 
 @keyframes slideshow {
   0% { opacity: 0; }
-  10% { opacity: 1; }
-  30% { opacity: 1; }
-  40% { opacity: 0; }
+  5% { opacity: 1; }
+  20% { opacity: 1; }
+  25% { opacity: 0; }
   100% { opacity: 0; }
 }
 
@@ -114,14 +122,12 @@ body, html {
   max-width: 300px;
   width: 80%;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.3);
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .cake:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(255,255,255,0.5);
 }
 
 .cake:active {
